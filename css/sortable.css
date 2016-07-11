@@ -1,0 +1,33 @@
+.list-numbered {
+  list-style: none;
+
+  counter-reset: line;
+}
+
+.list-numbered > li {
+  position: relative;
+cursor: move;
+  font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #333;
+}
+
+.list-numbered > li:before {
+	position: absolute;
+	left: -0.15em;
+	width: 18px;
+	height: 18px;
+	font-size: 12px;
+	background-color: rgb(5, 140, 187);
+	border-radius: 15px;
+	color: #fff;
+	text-align:center;
+	line-height: 18px;
+	font-weight: 900;
+	cursor: pointer;
+	font-family: 'Lato';
+	counter-increment: line;
+	content: counter(line);
+	margin-top:6px;
+}

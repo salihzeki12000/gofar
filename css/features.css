@@ -1,0 +1,203 @@
+
+
+/* ==========================================================================
+Features List
+========================================================================== */
+.red1{
+    content: "";
+    border-top: 1px solid #333;
+    position: absolute;
+    width: 20%;
+    /* top: 2%; */
+    /* bottom: 1%; */
+    /* bottom: 0px; */
+    /* float: right; */
+    /* margin-right: -201px; */
+    margin-top: 126px;
+    margin-left: -310px;
+}
+
+.red2{
+    display: inline-block;
+    content: "";
+    border-top: 1px solid #333;
+    position: absolute;
+    width: 20%;
+    top: 14.1%;
+    margin-left: 200px;
+    /* margin-top: -2px; */
+    /* margin-left: 10px; */
+    /* float: right; */
+}
+
+    .strike {
+        display: block;
+        text-align: center;
+        overflow: hidden;
+        white-space: nowrap;
+        color: #2C3E50;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+    
+    }
+
+    .strike > span {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .strike > span:before,
+    .strike > span:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width:420px;
+        /* Here is the modification */
+        border-top: 1px solid #333;
+    }
+
+    .strike > span:before {
+        right: 100%;
+        margin-right: 15px;
+    }
+
+    .strike > span:after {
+        left: 100%;
+        margin-left: 15px;
+    }
+
+.features-list {
+    /* padding: 130px 0; */
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+	background-color: #F5F6FA;
+  
+}
+.features-list h1 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #88C425;
+    font-size: 20px;
+    text-align: left;
+}
+.features-list p {
+    margin-bottom: 20px;
+    color: #778899;
+     text-align: left;
+}
+.feature-content {
+    display: inline-block;
+    margin-left: 0;
+    width: 65%;
+}
+.feature-icon {
+    display: inline-block;
+    margin-right: 25px;
+    width: 90px;
+    height: 90px;
+    border: solid 2px #88C425;
+    border-radius: 50%;
+    vertical-align: top;
+    text-align: center;
+    font-size: 25px;
+    line-height: 90px;
+}
+.feature-icon i {
+    color: #88C425
+}
+
+.feature-titles{
+    margin: 70px auto;
+    text-align: center;
+    position: relative;
+}
+
+.feature-titles h2 {
+    color: #222;
+    padding: 0;
+    z-index: 1;
+    position: relative;
+	font-family: 'Raleway', sans-serif !important;
+	font-size: 30px;
+	font-weight: 500;
+}
+
+.feature-titles h2 span {
+    font-size: 3.5rem;
+    font-weight: lighter;
+	color: #88C425 !important;
+}
+
+hr.tall {
+    margin: 24px auto;
+    border: 0;
+    max-width: 90%;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0));
+    background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0));
+    background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0));
+}
+
+.row_slide{
+	    margin-top: 60px;
+}
+/*
+@media (min-width: 1200px)
+.container-feature {
+    width: 1170px;
+}
+
+@media (min-width: 992px)
+.container-feature {
+    width: 970px;
+}
+@media (min-width: 768px)
+.container-feature {
+    width: 750px;
+}
+.container-feature {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row-feature {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+@media (min-width: 992px)
+.col-md-12-feature {
+    width: 100%;
+    float: left;
+}
+
+.col-md-12-feature {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width: 992px)
+.col-md-4-feature {
+    width: 33.33333333%;
+    float: left;
+}
+
+
+.col-md-4-feature {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+p {
+    margin: 0 0 10px;
+}*/

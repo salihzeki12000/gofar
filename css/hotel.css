@@ -1,0 +1,187 @@
+
+
+
+
+// Production code
+
+
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model;
+     -moz-box-sizing: $box-model;
+          box-sizing: $box-model;
+}
+
+@mixin transition($speed){
+  -webkit-transition: all $speed ease-out;
+  -moz-transition: all $speed ease-out;
+  -o-transition: all $speed ease-out;
+  -ms-transition: all $speed ease-out;	
+  transition: all $speed ease-out;
+}
+
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+*,
+*:after,
+*:before {
+  @include box-sizing(border-box);
+} // Thanks http://web-design-weekly.com/2013/05/12/handy-sass-mixins/
+
+
+
+.hotel-container{
+  width: 100%;
+  max-width: 960px;
+  margin: 50px auto;
+  font-family: 'Nunito', sans-serif;
+}
+
+.hotel-row{
+  padding: 0 15px;
+  margin-top: 1em;
+  display: inline-block;
+}
+
+.room-hotel {
+  width: 100%;    
+  height: auto;
+  display: block;
+  float: left;
+  background-color: #fff;
+      -webkit-box-shadow: 1px 1px 1px 1px #ccc;
+      -moz-box-shadow: 1px 1px 1px 1px #ccc;
+      box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+
+$room_img_width: 40%;
+$room_information_width: 60%;
+
+.room_img {
+  width: $room_img_width;
+  float: left;
+  max-height: 280px;
+  height: 100%;
+    
+    
+    opacity: 0.69; // Giving the img a dreamy welcoming look
+  overflow: hidden;
+  
+  
+  
+}
+
+.room_information { 
+  @include box-sizing(border-box);
+  width: $room_information_width;
+//  margin-bottom: 30px;
+  padding:0px 20px 20px 20px;
+  float: left;
+  color:  #495559;
+  @include font-size(1.5);
+
+  .room_information--heading{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    @include font-size(5);
+    margin: 0.4em 0em;
+  }
+  p{
+    @include font-size(1.6);
+  }
+  .room_information--moreinfo-btn{
+    color: #ccc;
+    text-transform: uppercase;
+    text-decoration: none;
+    @include font-size(1.3);
+  &:hover{
+    text-decoration: underline;
+  }
+  }
+}
+
+.room_moreinfo{
+  padding: 20px;
+  width: 100%;
+  float: left;
+  @include font-size(1.6);
+}
+
+$room_features_height: 60px;
+
+.room_features{
+  float: left;
+  width: 100%;
+  border-top: 1px solid #e5e5e5;
+  color: #e5e5e5;
+  
+  ul{
+    margin: 0;
+    padding: 0;
+    width: $room_img_width;
+    float: left;
+  }
+  li{
+    display: inline-block;
+    border-right: 1px solid #e5e5e5;
+    text-align: center;
+    padding: 0;
+    margin: 0;    
+    float: left;
+    height: $room_features_height;
+    line-height: $room_features_height;
+    width: calc(100% / 3);
+    @include font-size(2);
+  }
+  .room_features--price{}
+  .room_features--currency{} 
+  .room_features--book-btn{
+    float: left;
+    display: block;
+    line-height: $room_features_height;
+    width: $room_information_width;
+    
+    text-align: center;
+    color: #5fb2cf;
+    text-decoration: none;
+    text-transform: uppercase;
+    @include font-size(2);
+    //@include transition(1000ms);
+    &:hover{
+      @include font-size(2.11);
+    }
+  }
+}
+
+@media all and (max-width: 740px) {
+    .room_img{ 
+        width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+    .room_information{
+      width: 100%;
+      clear: both;
+      
+      .room_information--heading{
+        @include font-size(3);
+      }  
+    }
+  .room_features{
+    ul{
+      width: 100%;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    li:last-child{
+     border-right: 0;
+    }
+    .room_features--book-btn{
+      width: 100%;
+    }
+  }
+}

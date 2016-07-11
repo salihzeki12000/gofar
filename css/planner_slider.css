@@ -1,0 +1,188 @@
+./*step-2-day-head {
+    background: #2b98b5 none repeat scroll 0 0;
+    border-radius: 2px;
+    color: #fff;
+    height: 60px;
+    padding: 1px 10px 5px 10px;
+    cursor: pointer;
+    margin: 0 15px 10px;
+    width: 100%;
+    font-size: 16px;
+    font-family: "Source Sans Pro";
+    line-height: 1.42857143;
+}
+
+.step-2-cities-in-day {
+    font-size: 14px;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+*/
+/*strong {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 22px;
+    font-weight: bold;
+    text-align: left;
+}*/
+
+/*.step-2-day-date {
+    display: inline-block;
+    margin: 0 0 0 10px;
+}*/
+
+.slider-wrap {
+  width: 1000px;
+  height: 500px;
+  margin: 20px auto;
+}
+.slider {
+  overflow-x: scroll;
+}
+.holder {
+  width: 300%;
+}
+.slide {
+  float: left;
+  width: 300px;
+  height: 500px;
+  position: relative;
+  background-position: -100px 0;
+}
+.temp {
+  position: absolute;
+  color: white;
+  font-size: 100px;
+  bottom: 15px;
+  left: 15px;
+  font-family: 'Josefin Slab', serif;
+  font-weight: 100;
+}
+#slide-0 {
+  background-color: #EBEBEB;
+}
+#slide-1 {
+background-color: blue;
+}
+
+#slide-2 {
+ background-color: red;
+}
+.slide:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  
+}
+.slider-nav {
+  text-align: center;
+  margin: 10px 0 0 0;
+}
+.slider-nav a {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: #ddd;
+  overflow: hidden;
+  text-indent: -9999px;
+  border-radius: 50%;
+}
+.slider-nav a.active {
+  background: #999;
+}		
+
+
+
+
+
+.itinerary-subnav-pane .itinerary-subnav-contents {
+    margin-top: 23px;
+    pointer-events: auto;
+    height: 40px;
+    background: 0;
+    padding: 0 10px;
+    font-size:10px;
+    font-weight: 500;
+}
+.subnav-pane {
+    height: 50px;
+    font-weight: 700;
+    /* background-color: #fff; */
+    font-size: 13px;
+}
+
+.subnav-tabs .subnavlink.active {
+    border-bottom: 5px solid #fa8c00;
+}
+.itinerary-subnav-pane .itinerary-subnav-contents .subnav-tabs .subnavlink.active, .itinerary-subnav-pane .itinerary-subnav-contents .subnav-tabs .subnavlink:hover {
+    color: #fa8c00;
+    background: 0;
+}
+.subnav-pane .subnav-tabs .subnavlink:hover, .subnav-pane .subnav-tabs .subnavlink.active {
+   /* background-color: #fa8c00;*/
+   color: #fa8c00;
+}
+.itinerary-subnav-pane .itinerary-subnav-contents .subnav-tabs .subnavlink {
+    height: 40px;
+    background: 0;
+    color: #000;
+    border: 0;
+}
+/*.subnav-pane .subnav-tabs .subnavlink {
+    background-color: #000;
+    border-right: 1px solid #666;
+    height: 50px;
+    cursor: pointer;
+    float: left;
+    display: inline;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 18px;
+}*/
+
+.itinerary-subnav-pane .itinerary-subnav-contents .subnav-tabs .subnavlink.active .itin-subnav-list, .itinerary-subnav-pane .itinerary-subnav-contents .subnav-tabs .subnavlink:hover .itin-subnav-list {
+    background-position: -296px 5px;
+}
+.itinerary-subnav-pane .itinerary-subnav-contents .subnav-tabs .subnavlink .itin-subnav-list {
+    float: left;
+    margin-top: 7px;
+}
+.sheet.itin-subnav-list {
+    width: 24px;
+    height: 24px;
+    background-position: -320px 5px;
+}
+.sheet {
+    background-image: url('../../res/images/assets/sheet-10.png');
+    background-repeat: no-repeat;
+}
+
+.itinerary-subnav-pane .itinerary-subnav-contents .subnav-tabs .subnavlink.active, .itinerary-subnav-pane .itinerary-subnav-contents .subnav-tabs .subnavlink:hover {
+    color: #fa8c00;
+    background: 0;
+}
+.itinerary-subnav-pane .itinerary-subnav-contents .subnav-tabs .subnavlink {
+    height: 40px;
+    background: 0;
+    color: #000;
+    border: 0;
+}
+.subnav-pane .subnav-tabs .subnavlink {
+   /* background-color: #000;
+    border-right: 1px solid #666;*/
+    height: 30px;
+    cursor: pointer;
+    float: left;
+    display: inline;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 18px;
+}
